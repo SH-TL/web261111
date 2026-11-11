@@ -25,6 +25,11 @@ const movies = [
         title: "어벤져스: 인피니티 워", year: 2014, date: "2018-04-25",
         rating: 8.2, poster: "/kmP6viwzcEkZeoi1LaVcQemcvZh.jpg"
         
+    },
+    {
+        title: "어벤져스: 엔드게임", year: 2019, date: "2019-04-24",
+        rating: 8.2, poster: "/z7ilT5rNN9kDo8JZmgyhM6ej2xv.jpg"
+        
     }
     // 위와 같은 모양으로 4편을 더 씁니다. 객체와 객체 사이에는 쉼표(,) 
 ];

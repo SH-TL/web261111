@@ -28,59 +28,19 @@
         <p>포스터 위에 마우스를 올려 보세요.</p>
     </section>
     <main>
-        <pre id="out"></pre>
+        <!-- index.html : <section class="board" id="board"> 바로 위에 -->
+        <div class="toolbar">
+            <p id="count"></p>
+            <label for="sort">정렬</label>
+            <select id="sort" onchange="applySort()">
+                <option value="rating">평점순</option>
+                <option value="year">최신 개봉순</option>
+                <option value="title">제목순</option>
+            </select>
+        </div>
         <section class="board" id="board">
-            <article class="card">
-                <img class="poster" src="https://image.tmdb.org/t/p/w342/mt6uZzy7DAsncHlGGzMsyNgLR6v.jpg"
-                    alt="영화 제목 포스터">
-                <span class="badge">8.5</span>
-                <div class="info">
-                    <h2>스파이더맨: 브랜드 뉴 데이</h2>
-                    <p class="year">2026</p>
-                    <p class="overview">4년 전 소중한 사람들을 지키기 위해 모두의 기억에서 사라진 피터 파커.</p>
-                </div>
-            </article>
-            <article class="card">
-                <img class="poster" src="https://image.tmdb.org/t/p/w342/hjki9weYYVABvkpZbX5jBOmKXXv.jpg"
-                    alt="영화 제목 포스터">
-                <span class="badge">7.3</span>
-                <div class="info">
-                    <h2>스파이더맨: 홈커밍</h2>
-                    <p class="year">2017</p>
-                    <p class="overview">토니 스타크의 제안을 받고 시빌 워에 참여한 피터 파커는 다음 임무가 언제일지 설렘을 안고 하루하루를 보낸다.</p>
-                </div>
-            </article>
-            <article class="card">
-                <img class="poster" src="https://image.tmdb.org/t/p/w342/fvqoI9r1GU2EFkc0xjZ6dKCuDVR.jpg"
-                    alt="영화 제목 포스터">
-                <span class="badge">7.9</span>
-                <div class="info">
-                    <h2>스파이더맨: 노 웨이 홈</h2>
-                    <p class="year">2021</p>
-                    <p class="overview">미스테리오의 계략으로 세상에 정체가 탄로난 스파이더맨 피터 파커는 하루 아침에 평범한 일상을 잃게 된다.</p>
-                </div>
-            </article>
 
-            <article class="card">
-                <img class="poster" src="https://image.tmdb.org/t/p/w342/3YewJtji80oIroeXUavNRZkeXfQ.jpg"
-                    alt="영화 제목 포스터">
-                <span class="badge">7.4</span>
-                <div class="info">
-                    <h2>스파이더맨: 파 프롬 홈</h2>
-                    <p class="year">2019</p>
-                    <p class="overview">어벤져스 멤버들과 타노스와의 대접전을 마친 뒤, 지난 5년 동안 사라졌던 사람들이 동시에 돌아왔다.</p>
-                </div>
-            </article>
-            <article class="card">
-                <img class="poster" src="https://image.tmdb.org/t/p/w342/kmP6viwzcEkZeoi1LaVcQemcvZh.jpg"
-                    alt="영화 제목 포스터">
-                <span class="badge">8.2</span>
-                <div class="info">
-                    <h2>어벤져스: 인피니티 워</h2>
-                    <p class="year">2018</p>
-                    <p class="overview">타노스는 6개의 인피니티 스톤을 획득해 신으로 군림하려 한다.</p>
-                </div>
-            </article>
+
         </section>
         <section id="about">
             <h2>이 보드에 대하여</h2>
@@ -93,7 +53,8 @@
             This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
         <p>포스터와 영화 정보: TMDB (https://www.themoviedb.org)</p>
     </footer>
-    <script src="data.js"></script>
-    <script src="app.js"></script>
+    <script src="./data.js"></script>
+    <script src="./app.js"></script>
 </body>
-</html> 
+
+</html>
